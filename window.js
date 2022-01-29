@@ -19,13 +19,13 @@ var addVolcano_Map = () => {
     container.appendChild(Volcano_Map);
 };
 
-//creates a new snake windows
-var addSnake = () => {
+//creates a new Quiz windows
+var addQuiz = () => {
     container = document.getElementById('main-container');
-    snake = create(
-        `<div class="part-container snake" onmousedown = "goTop(this)" style="z-index:${returnTop()}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Snake</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Snake/index.html"></iframe></div>`
+    Quiz = create(
+        `<div class="part-container Quiz" onmousedown = "goTop(this)" style="z-index:${returnTop()}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Quiz</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Quiz/index.html"></iframe></div>`
     );
-    container.appendChild(snake);
+    container.appendChild(Quiz);
 };
 
 var addWeather = () => {
@@ -177,14 +177,14 @@ function loadWindows() {
                 );
                 container.appendChild(Weather);
                 break;
-            case 'snake':
-                snake = create(
-                    `<div class="part-container snake" onmousedown = "goTop(this)" style="z-index:${savedata[i]
+            case 'Quiz':
+                Quiz = create(
+                    `<div class="part-container Quiz" onmousedown = "goTop(this)" style="z-index:${savedata[i]
                         .zI};left:${savedata[i].posX};top:${savedata[i].posY};width:${savedata[i]
                             .width};height:${savedata[i]
-                                .height}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Snake</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Snake/index.html"></iframe></div>`
+                                .height}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Quiz</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Quiz/index.html"></iframe></div>`
                 );
-                container.appendChild(snake);
+                container.appendChild(Quiz);
                 break;
             case 'note':
                 note = create(
@@ -265,7 +265,7 @@ window.addEventListener('keydown', function (event) {
     }
 
     if (event.shiftKey && event.keyCode == 83) {
-        addSnake()
+        addQuiz()
     }
 
     // if(event.ctrlKey && event.keyCode == 82){
