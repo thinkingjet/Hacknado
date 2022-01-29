@@ -10,13 +10,13 @@ function create(htmlStr) {
     return frag;
 }
 
-//creates a new Map window
-var addMap = () => {
+//creates a new Volcano_Map window
+var addVolcano_Map = () => {
     container = document.getElementById('main-container');
-    Map = create(
-        `<div class="part-container Map" onmousedown = "goTop(this)" style="z-index:${returnTop()}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Map</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Map/index.html"></iframe></div>`
+    Volcano_Map = create(
+        `<div class="part-container Volcano_Map" onmousedown = "goTop(this)" style="z-index:${returnTop()}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Volcano_Map</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Volcano_Map/index.html"></iframe></div>`
     );
-    container.appendChild(Map);
+    container.appendChild(Volcano_Map);
 };
 
 //creates a new snake windows
@@ -159,14 +159,14 @@ function loadWindows() {
     container = document.getElementById('main-container');
     for (let i = 0; i < savedata.length; i++) {
         switch (savedata[i].type) {
-            case 'Map':
-                Map = create(
-                    `<div class="part-container Map" onmousedown = "goTop(this)" style="z-index:${savedata[i]
+            case 'Volcano_Map':
+                Volcano_Map = create(
+                    `<div class="part-container Volcano_Map" onmousedown = "goTop(this)" style="z-index:${savedata[i]
                         .zI};left:${savedata[i].posX};top:${savedata[i].posY};width:${savedata[i]
                             .width};height:${savedata[i]
-                                .height}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Map</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Map/index.html"></iframe></div>`
+                                .height}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Volcano_Map</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Volcano_Map/index.html"></iframe></div>`
                 );
-                container.appendChild(Map);
+                container.appendChild(Volcano_Map);
                 break;
             case 'Weather':
                 Weather = create(
@@ -257,7 +257,7 @@ window.addEventListener('keydown', function (event) {
     }
 
     if (event.shiftKey && event.keyCode == 67) {
-        addMap()
+        addVolcano_Map()
     }
 
     if (event.shiftKey && event.keyCode == 84) {

@@ -258,13 +258,13 @@ p {
     color: white;
 }
 
-.Map {
+.Volcano_Map {
     width: 600px;
     height: 400px;
     background-color: black;
 }
 
-.Map p {
+.Volcano_Map p {
     color: white;
 }
 
