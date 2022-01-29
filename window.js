@@ -39,7 +39,7 @@ var addWeather = () => {
 var addNote = () => {
     container = document.getElementById('main-container');
     note = create(
-        `<div class="part-container note" onmousedown = "goTop(this)" style="z-index:${returnTop()}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Notes</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Notes/index.html"></iframe></div>`
+        `<div class="part-container note" onmousedown = "goTop(this)" style="z-index:${returnTop()}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Air_Quality</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Air_Quality/index.html"></iframe></div>`
     );
     container.appendChild(note);
 };
@@ -100,7 +100,7 @@ var returnTop = () => {
     return zIndex + 1;
 };
 
-//saving notes in localStorage so they don't disappear when reloaded
+//saving Air_Quality in localStorage so they don't disappear when reloaded
 function saveWindow(posX, posY, zI, width, height, type) {
     this.posX = posX;
     this.posY = posY;
@@ -191,7 +191,7 @@ function loadWindows() {
                     `<div class="part-container note" onmousedown = "goTop(this)" style="z-index:${savedata[i]
                         .zI};left:${savedata[i].posX};top:${savedata[i].posY};width:${savedata[i]
                             .width};height:${savedata[i]
-                                .height}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Notes</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Notes/index.html"></iframe></div>`
+                                .height}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Air_Quality</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Air_Quality/index.html"></iframe></div>`
                 );
                 container.appendChild(note);
                 break;
