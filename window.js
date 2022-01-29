@@ -28,12 +28,12 @@ var addSnake = () => {
     container.appendChild(snake);
 };
 
-var addDictionary = () => {
+var addWeather = () => {
     container = document.getElementById('main-container');
-    dictionary = create(
-        `<div class="part-container dictionary" onmousedown = "goTop(this)" style="z-index:${returnTop()}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Dictionary</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Dictionary/index.html"></iframe></div>`
+    Weather = create(
+        `<div class="part-container Weather" onmousedown = "goTop(this)" style="z-index:${returnTop()}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Weather</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Weather/index.html"></iframe></div>`
     );
-    container.appendChild(dictionary);
+    container.appendChild(Weather);
 };
 
 var addNote = () => {
@@ -168,14 +168,14 @@ function loadWindows() {
                 );
                 container.appendChild(calculator);
                 break;
-            case 'dictionary':
-                dictionary = create(
-                    `<div class="part-container dictionary" onmousedown = "goTop(this)" style="z-index:${savedata[i]
+            case 'Weather':
+                Weather = create(
+                    `<div class="part-container Weather" onmousedown = "goTop(this)" style="z-index:${savedata[i]
                         .zI};left:${savedata[i].posX};top:${savedata[i].posY};width:${savedata[i]
                             .width};height:${savedata[i]
-                                .height}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Dictionary</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Dictionary/index.html"></iframe></div>`
+                                .height}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Weather</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Weather/index.html"></iframe></div>`
                 );
-                container.appendChild(dictionary);
+                container.appendChild(Weather);
                 break;
             case 'snake':
                 snake = create(
@@ -253,7 +253,7 @@ window.addEventListener('keydown', function (event) {
     if (event.shiftKey && event.keyCode == 68) {
         // new dict
         // shift + d
-        addDictionary()
+        addWeather()
     }
 
     if (event.shiftKey && event.keyCode == 67) {
