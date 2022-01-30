@@ -1,6 +1,6 @@
 let newsFunction = () => {
   fetch(
-    " https://newsapi.org/v2/everything?q=Weather&from=2022-01-29&sortBy=popularity&apiKey=d7bb41880e6f47cb986064472fc0ea63"
+    " https://newsapi.org/v2/everything?q=Weather&from=2022-01-29&sortBy=popularity&apiKey=b3011463760b46e290a2112416b6deb3"
   )
     .then((res) => res.json())
     .then((data) => {
