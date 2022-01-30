@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   console.log(json);
   const { articles } = json;
 
-  for (let i = 0; i < articles.length; i++) {
+  for (let i = 0; i < 5; i++) {
     const html = `<div class="news-container">
               <h3 class="news-title">${articles[i].title}</h3>
               <p class="discription">
