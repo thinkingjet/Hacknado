@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", async function () {
-  //const data = await fetch(
-    " https://gnews.io/api/v4/search?q=weather&token=a38e7f1225ce41d278a77b285823c848"
+  const data = await fetch(
+    "https://newsapi.org/v2/everything?q=Apple&from=2022-01-30&sortBy=popularity&apiKey=d7bb41880e6f47cb986064472fc0ea63 "
   );
+  //" https://gnews.io/api/v4/search?q=weather&token=a38e7f1225ce41d278a77b285823c848"
   const json = await data.json();
   console.log(json);
   const { articles } = json;
