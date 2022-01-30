@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", async function () {
   const data = await fetch(
-    " https://newsdata.io/api/1/news?apikey=41369098ca55fb208226411e99db27f3753b&language=fr,en   "
+    " https://gnews.io/api/v4/search?q=example&token=a38e7f1225ce41d278a77b285823c848"
   );
   const json = await data.json();
   console.log(json);
-  const { results } = json;
+  const { articles } = json;
 
   for (let i = 0; i < results.length; i++) {
     const html = `<div class="news-container">
