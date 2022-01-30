@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                   ${articles[i].description}
               </p>
               <div class="btn">
-                  <a class="news-btn" href=${articles[i].url} target=_blank >Read more</a>
+                  <a target=”_blank” class="news-btn" href=${articles[i].url} target=_blank >Read more</a>
               </div>
           </div>`;
     document
