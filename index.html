@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Hacknado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="drag.js"></script>
+    <script src="window.js"></script>
+    <script src="appearance.js"></script>
+    <script src="./News.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+</head>
+
+<body>
+    
+    <div id="header">
+        <div style="float:left">
+            <img src="favicon.ico" width="40px" height="40px"></img>
+        </div>
+        <div id="header-title-container" class="header-item">
+            <h2>Grow Green</h2>
+            
+        </div>
+        <div id="add-button" class="header-item">
+            <div id="plus-button">+</div>
+            <div class="drop-down">
+                <div onclick="addAir_Quality()">Air Quality</div>
+                <div onclick="addWeather()">Weather</div>
+                <div onclick="addVolcano_Map()">Volcano_Map</div>
+                <div onclick="addTimer()">Timer/Clock</div>
+                <div onclick="addQuiz()">Quiz</div>
+                <iframe width="500" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://virtualsky.lco.global/embed/index.html?longitude=144.9631&latitude=37.8136&projection=polar&constellations=true&meteorshowers=true&live=true&az=186.84507422163477" allowTransparency="true"></iframe>
+            </div>
+            
+        </div>
+        
+        <div id="appearance-toggle" class="header-item">
+            <div id="darklight-button">◐</div>
+            <div class="drop-down">
+                <div id="automode-button" onclick="auto()">auto</div>
+                <div id="lightmode-button" onclick="lightmode()">light</div>
+                <div id="darkmode-button" onclick="darkmode()">dark</div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+
+    <div id="main-container">
+  
+        <div class="ssection-parallax parallax-01" style="background-image: url('https://free4kwallpapers.com/uploads/originals/2021/08/31/black-hole-wallpaper.jpg');"></div>
+     <div class="btns">
+        <button onclick="addAir_Quality()" class="nav-btn yellowish">
+            Air Quality
+        </button>
+        <button onclick="addWeather()" class="nav-btn greenish">
+            Weather
+        </button>
+        <button onclick="addVolcano_Map()" class="nav-btn blurish">
+            Volcano Map
+        </button>
+        <button onclick="addTimer()" class="nav-btn redish">
+            Timer/Clock
+        </button>
+        <button onclick="addQuiz()" class="nav-btn lightish">
+            Quiz
+        </button>
+    </div>
+    <div class="cover">
+        <h1 class="main-heading">Environmental News</h1>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="contact">
+            <p>To submit your feedback for this website, call or message</p><h3>+1 775 535 7424 </h3><h6>Powered by Twilio</h6>
+        </div>
+       <h1 class="footer-text"> Made with <span>❤</span> for <a href='https://organize.mlh.io/participants/events/7832-hacknado'>Hacknado</a><a href="https://github.com/thinkingjet/Hacknado" class="fa fa-github"></a></h1>
+    </footer>
+</body>
+
+</html>

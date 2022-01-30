@@ -1,2 +1,4 @@
 # Hacknado
-Hacknado Hackathon Submission: Gaurav, Swayam and Elisabeth
+
+Hacknado Hackathon Submission: Gaurav, Swayam, and Elisabeth
+
