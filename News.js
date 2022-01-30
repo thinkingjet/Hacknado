@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", async function () {
   console.log(json);
   const { articles } = json;
 
-  for (let i = 0; i < results.length; i++) {
+  for (let i = 0; i < articles.length; i++) {
     const html = `<div class="news-container">
-              <h3 class="news-title">${results[i].title}</h3>
+              <h3 class="news-title">${articles[i].title}</h3>
               <p class="discription">
-                  ${results[i].description}
+                  ${articles[i].description}
               </p>
               <div class="btn">
-                  <a class="news-btn" href=${results[i].url} target=_blank >Read more</a>
+                  <a class="news-btn" href=${articles[i].url} target=_blank >Read more</a>
               </div>
           </div>`;
     document
