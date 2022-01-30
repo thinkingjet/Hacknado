@@ -60,7 +60,15 @@ p {
   float: right;
   margin: 6px;
   padding-right: 10px;
-}
+  font-size: 72px;}
+  /* background: -webkit-linear-gradient(#eee, #333);
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: rgb(0, 255, 128);} */
+ 
+  
+  
+         
+
 
 #appearance-toggle {
   font-size: 20px;
@@ -392,27 +400,50 @@ a:hover {
   display: inline-block;
   font-size: 16px;
   border-radius: 2px;
+
+  background-position: right center; /* change the direction of the change here */
+  /* color: #fff; */
+  text-decoration: none;
+  transition: 0.5s;
+  background-size: 200% auto;
+  /* color: white;   */
+  box-shadow: 0 0 20px rgb(255, 50, 119);
+  border-radius: 10px;
 }
 
 .yellowish {
   background-color: #c0ff00;
-}
+  background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+  
+
 
 .greenish {
   background-color: #ffc0ff;
-}
+
+background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA  51%, #1D2B64  100%)}
+
+
 
 .blueish {
   background-color: #40ffc0;
-}
+
+  background-image: linear-gradient(to right, #1F1C2C 0%, #928DAB  51%, #1F1C2C  100%)}
+  
+
 
 .redish {
   background-color: #ff4000;
-}
+
+  background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%)}
+  
+
 
 .lightish {
   background-color: #80c0c0;
-}
+
+  background-image: linear-gradient(to right, #FC354C 0%, #0ABFBC  51%, #FC354C  100%)}
+  
+
 
 .news-container {
   max-width: 50%;
