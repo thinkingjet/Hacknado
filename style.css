@@ -466,7 +466,7 @@ a:hover {
   max-width: 1100px;
   margin: 20px auto;
   padding-top: 20px;
-  background-color: var(--header);
+  background-color: rgb(20, 23, 30, 0.75);
   -webkit-backdrop-filter: blur(10px) saturate(120%);
   backdrop-filter: blur(10px) saturate(120%);
   border-bottom: 1px solid var(--header-secondary);
@@ -524,7 +524,7 @@ a:hover {
   max-width: 1100px;
   padding: 25px 0;
   margin: auto;
-  background-color: var(--header);
+  background-color: rgb(20, 23, 30, 0.75);
   -webkit-backdrop-filter: blur(20px) saturate(120%);
   backdrop-filter: blur(20px) saturate(120%);
   border-bottom: 1px solid var(--header-secondary);
