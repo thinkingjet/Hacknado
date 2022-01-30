@@ -36,12 +36,12 @@ var addWeather = () => {
   container.appendChild(Weather);
 };
 
-var addNote = () => {
+var addAir_Quality = () => {
   container = document.getElementById("main-container");
-  note = create(
-    `<div class="part-container note" onmousedown = "goTop(this)" style="z-index:${returnTop()}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Air_Quality</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Air_Quality/index.html"></iframe></div>`
+  Air_Quality = create(
+    `<div class="part-container Air_Quality" onmousedown = "goTop(this)" style="z-index:${returnTop()}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Air_Quality</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Air_Quality/index.html"></iframe></div>`
   );
-  container.appendChild(note);
+  container.appendChild(Air_Quality);
 };
 
 var addTimer = () => {
@@ -177,11 +177,11 @@ function loadWindows() {
         );
         container.appendChild(Quiz);
         break;
-      case "note":
-        note = create(
-          `<div class="part-container note" onmousedown = "goTop(this)" style="z-index:${savedata[i].zI};left:${savedata[i].posX};top:${savedata[i].posY};width:${savedata[i].width};height:${savedata[i].height}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Air_Quality</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Air_Quality/index.html"></iframe></div>`
+      case "Air_Quality":
+        Air_Quality = create(
+          `<div class="part-container Air_Quality" onmousedown = "goTop(this)" style="z-index:${savedata[i].zI};left:${savedata[i].posX};top:${savedata[i].posY};width:${savedata[i].width};height:${savedata[i].height}"><div class="drag-bar" onmousedown="dragStart(this)"><p>Air_Quality</p></div><button onclick="closeWindow(this)">×</button><iframe src="Parts/Air_Quality/index.html"></iframe></div>`
         );
-        container.appendChild(note);
+        container.appendChild(Air_Quality);
         break;
       case "timer":
         timer = create(
@@ -227,9 +227,9 @@ function changeUpdatePageRotation(condition) {
 
 window.addEventListener("keydown", function (event) {
   if (event.shiftKey && event.keyCode == 78) {
-    // new note
+    // new Air_Quality
     // shift + n
-    addNote();
+    addAir_Quality();
   }
 
   if (event.shiftKey && event.keyCode == 68) {

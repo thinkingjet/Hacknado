@@ -15,7 +15,7 @@ let newsFunction = () => {
                 ${articles[i].description}
             </p>
             <div class="btn">
-                <a class="news-btn" href=${articles[i].url}>Read more</a>
+                <a class="news-btn" href=${articles[i].url} target=_blank >Read more</a>
             </div>
         </div>`;
         document

@@ -1,9 +1,11 @@
 body {
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
     font-family: Roboto, sans-serif;
     background-color: rgb(255, 133, 51);
 }
 
 .tabs {
+    background-image: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%);
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 5px;
@@ -262,3 +264,15 @@ h1 {
     line-height: 0px;
     padding: 0px 15px 0px 15px;
 }
+
+
+.ssection-parallax {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
