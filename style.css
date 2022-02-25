@@ -466,7 +466,7 @@ a:hover {
   max-width: 1100px;
   margin: 20px auto;
   padding-top: 20px;
-  background-color: var(--header);
+  background-color: rgb(20, 23, 30, 0.75);
   -webkit-backdrop-filter: blur(10px) saturate(120%);
   backdrop-filter: blur(10px) saturate(120%);
   border-bottom: 1px solid var(--header-secondary);
@@ -488,6 +488,7 @@ a:hover {
 
 .news-title {
   line-height: 1.5;
+  text-align: justify;
 }
 
 .discription {
@@ -496,11 +497,12 @@ a:hover {
 }
 
 .fa {
-  font-size: 30px;
-  width: 50px;
+  font-size: 40px;
+  width: 80px;
   text-align: center;
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 
 .fa:hover {
@@ -513,7 +515,7 @@ a:hover {
 }
 
 .news-btn {
-  background: #ffff00;
+  background: #ababe4;
   text-decoration: none;
   color: #000;
   padding: 5px 10px;
@@ -521,10 +523,10 @@ a:hover {
 
 .footer {
   text-align: center;
-  max-width: 1100px;
+  max-width: 100%;
   padding: 25px 0;
   margin: auto;
-  background-color: var(--header);
+  background-color: rgb(20, 23, 30, 0.75);
   -webkit-backdrop-filter: blur(20px) saturate(120%);
   backdrop-filter: blur(20px) saturate(120%);
   border-bottom: 1px solid var(--header-secondary);
@@ -536,6 +538,11 @@ a:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.hack,
+a {
+  color: #ffc0ff;
 }
 
 .Volcano_Map {
